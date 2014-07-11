@@ -1,0 +1,80 @@
+PODS:
+  - ASIHTTPRequest (1.8.2):
+    - ASIHTTPRequest/ASIWebPageRequest
+    - ASIHTTPRequest/CloudFiles
+    - ASIHTTPRequest/Core
+    - ASIHTTPRequest/S3
+  - ASIHTTPRequest/ASIWebPageRequest (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/CloudFiles (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/Core (1.8.2):
+    - Reachability
+  - ASIHTTPRequest/S3 (1.8.2):
+    - ASIHTTPRequest/Core
+  - CocoaLumberjack (1.8.1):
+    - CocoaLumberjack/Extensions
+  - CocoaLumberjack/Core (1.8.1)
+  - CocoaLumberjack/Extensions (1.8.1):
+    - CocoaLumberjack/Core
+  - DAContextMenuTableViewController (1.0.2)
+  - FontAwesome+iOS (0.1.1)
+  - Harpy (2.5.4):
+    - UIDevice-SupportedDevices
+  - HMSegmentedControl (1.3.0)
+  - KxMenu (1)
+  - MBProgressHUD (0.8)
+  - MJPopupViewController (0.4)
+  - MYBlurIntroductionView (1.0.3)
+  - PPiAwesomeButton (1.4.1):
+    - FontAwesome+iOS
+  - PPiFlatSegmentedControl (1.3.3):
+    - PPiAwesomeButton
+  - Reachability (3.1.1)
+  - REMenu (1.7.1)
+  - RTLabel (1.0)
+  - SWTableViewCell (0.2.7)
+  - UICountingLabel (1.1.0)
+  - UIDevice-SupportedDevices (1.0.1)
+
+DEPENDENCIES:
+  - ASIHTTPRequest
+  - CocoaLumberjack
+  - DAContextMenuTableViewController
+  - Harpy
+  - HMSegmentedControl (~> 1.3.0)
+  - KxMenu
+  - MBProgressHUD
+  - MJPopupViewController
+  - MYBlurIntroductionView
+  - PPiFlatSegmentedControl (from `https://github.com/helloworld116/PPiFlatSegmentedControl.git`)
+  - REMenu (~> 1.7.1)
+  - RTLabel
+  - SWTableViewCell
+  - UICountingLabel
+
+EXTERNAL SOURCES:
+  PPiFlatSegmentedControl:
+    :git: https://github.com/helloworld116/PPiFlatSegmentedControl.git
+
+SPEC CHECKSUMS:
+  ASIHTTPRequest: 0b05282cf3c422c3474eff98c5bb8c1192b91b86
+  CocoaLumberjack: 020378ec400d658923bf5887178394f65f052c90
+  DAContextMenuTableViewController: 0151e9de219c3236257c2cc970968c77f7464a73
+  FontAwesome+iOS: 243c5309e90d5788909b0f859f75ecff4a20f88f
+  Harpy: 1484948e3fdfc84b6383f55dd5517ed9b3757727
+  HMSegmentedControl: 3a58d4fc011e40c93c5299b9e8283e89c32f4c64
+  KxMenu: 99db7f9b685c3c8325d152df3fe5b7fdc8b8343e
+  MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
+  MJPopupViewController: 4cd0badf3dae541017e0e16e2d2c7578d9224052
+  MYBlurIntroductionView: 0ed5699c570ceb1cdfc86dc6cf7dae869950d677
+  PPiAwesomeButton: 7f26d47d204fbdf448af8afedd4bb3f4bf7048a9
+  PPiFlatSegmentedControl: 32d42c7f50cd2db1c40ee17a94d78da6f69d9813
+  Reachability: be4883bb93f31e38266ae3365e5600a317aae735
+  REMenu: 4c85fa951c74b41b1eb7f9a31ebed2da8ae3f7d7
+  RTLabel: 124420c05d7897bf7f14b75a26f54f2932ac4ca5
+  SWTableViewCell: cb58ca308c311391844c44aede3dc6b3a636d37b
+  UICountingLabel: 57657e7fa5618c697d3b32031e0c8e63b7fdd422
+  UIDevice-SupportedDevices: 9e75c80145f10e21282a422ccd1f7134dddd2d00
+
+COCOAPODS: 0.32.1

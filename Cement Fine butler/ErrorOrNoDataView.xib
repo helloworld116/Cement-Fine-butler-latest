@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ErrorOrNoDataView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yh-4B-lkg">
+                    <rect key="frame" x="0.0" y="189" width="320" height="190"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="data_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Yhd-hz-mhp">
+                            <rect key="frame" x="110" y="0.0" width="100" height="100"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="Gjv-OL-XlD"/>
+                                <constraint firstAttribute="height" constant="100" id="LJO-xr-n2N"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fte-0Y-8N3">
+                            <rect key="frame" x="142" y="113" width="36" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.76470588235294112" green="0.77647058823529413" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2X-1S-HJi">
+                            <rect key="frame" x="58" y="145" width="204" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="204" id="D3b-Vj-4kV"/>
+                                <constraint firstAttribute="height" constant="44" id="kRH-Wr-1gq"/>
+                            </constraints>
+                            <state key="normal" title="点击刷新">
+                                <color key="titleColor" red="0.38823529411764707" green="0.38039215686274508" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerX" secondItem="Fte-0Y-8N3" secondAttribute="centerX" id="5OD-kd-5DB"/>
+                        <constraint firstAttribute="height" constant="190" id="90S-0g-h8E"/>
+                        <constraint firstAttribute="width" constant="320" id="9nl-XG-uER"/>
+                        <constraint firstAttribute="centerX" secondItem="q2X-1S-HJi" secondAttribute="centerX" id="GkI-bd-8Uo"/>
+                        <constraint firstItem="Yhd-hz-mhp" firstAttribute="top" secondItem="0yh-4B-lkg" secondAttribute="top" id="IuR-AZ-oVL"/>
+                        <constraint firstItem="Fte-0Y-8N3" firstAttribute="top" secondItem="Yhd-hz-mhp" secondAttribute="bottom" constant="13" id="KTV-m6-BYw"/>
+                        <constraint firstAttribute="centerX" secondItem="Yhd-hz-mhp" secondAttribute="centerX" id="Zk2-j8-u1i"/>
+                        <constraint firstItem="q2X-1S-HJi" firstAttribute="top" secondItem="Fte-0Y-8N3" secondAttribute="bottom" constant="15" id="edW-Nv-cTb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0yh-4B-lkg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="T0g-4A-xFq"/>
+                <constraint firstAttribute="trailing" secondItem="0yh-4B-lkg" secondAttribute="trailing" id="YCs-w2-Mjw"/>
+                <constraint firstAttribute="centerY" secondItem="0yh-4B-lkg" secondAttribute="centerY" id="f6D-wB-Iju"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="btn" destination="q2X-1S-HJi" id="Xdz-kk-Bsy"/>
+                <outlet property="lblMsg" destination="Fte-0Y-8N3" id="8ha-fH-tWT"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="data_icon" width="100" height="100"/>
+    </resources>
+</document>
